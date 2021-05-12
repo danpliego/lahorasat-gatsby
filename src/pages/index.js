@@ -17,7 +17,9 @@ const IndexPage = ({ data }) => {
     <Layout data={data}>
       <SEO title="Home" />  
       <Header />
-      hi bitches
+      <h1>
+      Todo lo que necesitas saber sobre <span>el SAT</span> y la vida financiera contado por millennials para millennials* 🤓💸
+      </h1>
       {/* { data.allDatoCmsSection.edges.filter(section => section.node.page === 'home-hero').map((section) => (
           <Slider data={section.node} openModal={() => setOpenModal(true)} light={section.node.light} />
         )

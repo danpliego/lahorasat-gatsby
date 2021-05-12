@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import logo from "../images/logo.svg"
 
 const Header = () => {
 
@@ -19,14 +20,12 @@ const Header = () => {
       };
   }, []);
 
-  const logo = 
-
   return (
     <header className={scrollPosition > 0 ? 'sticky' : null}>
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <button className="navbar-toggler" type="button" onClick={() => setShowMenu(!showMenu)}>
-            {/* <a className="navbar-brand mr-4" href="/"><img alt="Finsera" height="30" src={logo} /></a> logo mobile */}
+          <button className="navbar-toggler d-lg-none" type="button" onClick={() => setShowMenu(!showMenu)}>
+            <a className="navbar-brand mr-4" href="/"><img alt="Finsera" height="30" src={logo} /></a>
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className={showMenu ? "navbar-collapse" : "collapse navbar-collapse" }>
